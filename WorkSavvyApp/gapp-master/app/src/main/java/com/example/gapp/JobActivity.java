@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Chronometer;
+import android.widget.Toast;
 
 public class JobActivity extends AppCompatActivity {
     Chronometer chron;
@@ -22,7 +23,14 @@ public class JobActivity extends AppCompatActivity {
     public void hide(View view) {
         setContentView(R.layout.activity_job);
         chron = (Chronometer) findViewById(R.id.Chronometer);
-        chron.setVisibility(view.INVISIBLE);
+
+        if (chron.getVisibility() == view.INVISIBLE) {
+            chron.setVisibility(view.VISIBLE);
+            Toast.makeText(getApplicationContext(), "Invisible", Toast.LENGTH_SHORT).show();
+        } else {
+            chron.setVisibility(view.INVISIBLE);
+            Toast.makeText(getApplicationContext(), "Visible", Toast.LENGTH_SHORT).show();
+        }
     }
 
     public void prevButtonPress() {

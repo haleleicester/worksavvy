@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onUserAccess(View view){
-        Intent myIntent = new Intent(view.getContext(), PreparationActivty.class);
+        Intent myIntent = new Intent(view.getContext(), JobActivity.class);
         startActivityForResult(myIntent, 0);
     }
     public void onDataEntry(View view){

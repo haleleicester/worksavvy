@@ -51,7 +51,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/NextStep"
         android:text="Next"
-        android:onClick="hide"
         android:layout_alignTop="@+id/PlayPauseButton"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
@@ -64,6 +63,16 @@
         android:layout_margin="20px"
         android:textSize="100px"
         android:id="@+id/Chronometer"
+        />
+
+    <!-- Button to hide timer-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Chronometer"
+        android:layout_centerHorizontal="true"
+        android:text="Hide"
+        android:onClick="hide"
         />
 
 </RelativeLayout>
