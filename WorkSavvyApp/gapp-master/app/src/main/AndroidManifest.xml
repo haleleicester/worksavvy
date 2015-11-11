@@ -25,7 +25,6 @@
         </activity>
         <activity
             android:name=".CreateEvent1Activity"
-
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
@@ -49,6 +48,10 @@
             android:name=".EntertainmentActivity"
             android:label="@string/title_activity_entertainment"
             android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".model.DataEntryActivity"
+            android:label="@string/title_activity_data_entry" >
         </activity>
     </application>
 
