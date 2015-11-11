@@ -28,6 +28,13 @@
     <string name="activityName"></string>
     <string name="equipmentCreate"></string>
 
+<<<<<<< HEAD
+=======
+
+
+
+
+>>>>>>> 2d463ed9b3f3e30eb66d718f48f9bf1aea7d0d43
     <string name="taskNumber">Task no.</string>
     <string name="taskDescription">Description</string>
     <string name="timeLimit">Time Limit</string>

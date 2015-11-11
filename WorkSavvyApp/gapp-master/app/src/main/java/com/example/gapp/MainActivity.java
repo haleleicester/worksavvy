@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+<<<<<<< HEAD
     public void onDataEntry(View view) {
         Intent myIntent = new Intent(view.getContext(), DataEntryActivity.class);
         startActivityForResult(myIntent, 0);
@@ -24,6 +25,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void onJob(View view){
         Intent myIntent = new Intent(view.getContext(), JobActivity.class);
+=======
+    public void onInspirePress(View view){
+        Intent myIntent = new Intent(view.getContext(), InspireActivity.class);
+        startActivityForResult(myIntent, 0);
+    }
+    public void onNewEventPress(View view){
+        Intent myIntent = new Intent(view.getContext(), CreateEvent1Activity.class);
+>>>>>>> 2d463ed9b3f3e30eb66d718f48f9bf1aea7d0d43
         startActivityForResult(myIntent, 0);
     }
 

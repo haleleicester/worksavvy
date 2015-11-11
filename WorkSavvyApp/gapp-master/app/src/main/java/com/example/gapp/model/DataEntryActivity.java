@@ -51,6 +51,7 @@ public class DataEntryActivity extends AppCompatActivity {
     public void onHealthMinusPress(View view){
         Toast.makeText(getApplicationContext(), "Remove Health + Safety", Toast.LENGTH_LONG).show();
     }
+<<<<<<< HEAD
 
     public void onStepAddPress(View view){
         Toast.makeText(getApplicationContext(), "Add Steps", Toast.LENGTH_LONG).show();
@@ -96,4 +97,50 @@ public class DataEntryActivity extends AppCompatActivity {
         }
         */
     }
+=======
+
+    public void onStepAddPress(View view){
+        Toast.makeText(getApplicationContext(), "Add Steps", Toast.LENGTH_LONG).show();
+    }
+    public void onStepMinusPress(View view){
+        Toast.makeText(getApplicationContext(), "Remove Steps", Toast.LENGTH_LONG).show();
+    }
+
+    public void onFinishPress(View view){
+        activityName = (EditText) findViewById(R.id.activityName);
+        String sActivityName = activityName.getText().toString();
+        //Toast.makeText(getApplicationContext(), sActivityName, Toast.LENGTH_LONG).show();
+
+        equipmentName = (EditText) findViewById(R.id.equipmentCreate);
+        String sEquipmentName = equipmentName.getText().toString();
+        //Toast.makeText(getApplicationContext(), sEquipmentName, Toast.LENGTH_LONG).show();
+
+        healthName = (EditText) findViewById(R.id.healthCreate);
+        String sHealthName = healthName.getText().toString();
+        //Toast.makeText(getApplicationContext(), sHealthName, Toast.LENGTH_LONG).show();
+
+        stepsName = (EditText) findViewById(R.id.stepsCreate);
+        String sStepsName = stepsName.getText().toString();
+        //Toast.makeText(getApplicationContext(), sStepsName, Toast.LENGTH_LONG).show();
+
+        try {
+
+            URL url;
+            url = new URL("http://www.jrevents.co.uk/test.php");
+            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            //Current problem lies in conn.getResponseCode()
+            if (conn.getResponseCode() == HttpURLConnection.HTTP_OK) {
+                InputStream is = conn.getInputStream();
+            } else {
+                //InputStream err = conn.getErrorStream();
+            }
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+>>>>>>> 2d463ed9b3f3e30eb66d718f48f9bf1aea7d0d43
 }

@@ -9,6 +9,12 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_main" tools:context=".MainActivity">
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 2d463ed9b3f3e30eb66d718f48f9bf1aea7d0d43
     <TextView android:text="@string/Welcome" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
@@ -19,6 +25,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:text="User"
         android:id="@+id/new_event"
         android:onClick="onJob"
@@ -36,13 +43,38 @@
         android:layout_alignTop="@+id/new_event"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />-->
+=======
+        android:text="@string/new_event"
+        android:id="@+id/new_event"
+        android:onClick="onNewEventPress"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+>>>>>>> 2d463ed9b3f3e30eb66d718f48f9bf1aea7d0d43
+
+
+    <!--<Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+<<<<<<< HEAD
+        android:text="Enter Data"
+        android:id="@+id/get_inspired"
+        android:onClick="onDataEntry"
+=======
+        android:text="@string/inspire"
+        android:id="@+id/get_inspired"
+        android:onClick="onInspirePress"
+        android:layout_alignTop="@+id/new_event"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />-->
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enter Data"
+        android:text="@string/inspire"
         android:id="@+id/get_inspired"
-        android:onClick="onDataEntry"
+        android:onClick="onTestPress"
+>>>>>>> 2d463ed9b3f3e30eb66d718f48f9bf1aea7d0d43
         android:layout_alignTop="@+id/new_event"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
