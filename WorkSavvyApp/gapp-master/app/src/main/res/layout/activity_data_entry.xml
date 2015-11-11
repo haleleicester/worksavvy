@@ -6,7 +6,54 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.example.gapp.model.DataEntryActivity">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/activityName"
+        android:layout_centerHorizontal="true"
+        android:text="@string/activityName"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/activityName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:id="@+id/activityTable">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/taskNumber"
+                android:id="@+id/textView"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/taskDescription"
+                android:id="@+id/textView2"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/timeLimit"
+                android:id="@+id/textView3"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/taskCheck"
+                android:id="@+id/textView4"
+                android:textAlignment="center"/>
+
+        </TableRow>
+    </TableLayout>
 
 </RelativeLayout>

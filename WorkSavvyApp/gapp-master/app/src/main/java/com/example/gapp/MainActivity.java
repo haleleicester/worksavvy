@@ -7,6 +7,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.example.gapp.model.DataEntryActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -43,5 +45,10 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void onTestPress(View view){
+        Intent myIntent = new Intent(view.getContext(), DataEntryActivity.class);
+        startActivityForResult(myIntent, 0);
     }
 }
