@@ -49,8 +49,25 @@
             <EditText
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView2"
-                android:layout_weight="0.6"/>
+                android:id="@+id/equipmentCreate"
+                android:text="@string/equipmentCreate"
+                android:layout_weight="0.4"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:id="@+id/equipmentAdd"
+                android:onClick="onEquipmentAddPress"
+                android:layout_weight="0.1"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:id="@+id/equipmentMinus"
+                android:onClick="onEquipmentMinusPress"
+                android:layout_weight="0.1"/>
         </LinearLayout>
 
         <LinearLayout
@@ -68,8 +85,24 @@
             <EditText
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText2"
-                android:layout_weight="0.6"/>
+                android:id="@+id/healthCreate"
+                android:layout_weight="0.4"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:id="@+id/button4"
+                android:layout_weight="0.1"
+                android:onClick="onHealthAddPress" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:id="@+id/button5"
+                android:layout_weight="0.1"
+                android:onClick="onHealthMinusPress" />
         </LinearLayout>
 
         <LinearLayout
@@ -87,15 +120,33 @@
             <EditText
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText4"
-                android:layout_weight="0.6"/>
+                android:id="@+id/stepsCreate"
+                android:layout_weight="0.4"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:id="@+id/button6"
+                android:layout_weight="0.1"
+                android:onClick="onStepAddPress" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:id="@+id/button7"
+                android:layout_weight="0.1"
+                android:onClick="onStepMinusPress" />
         </LinearLayout>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/button" />
+            android:text="Finish"
+            android:id="@+id/button"
+            android:onClick="onFinishPress" />
+
 
     </TableLayout>
 

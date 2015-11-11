@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/JobTitle"
         android:textSize="100px"
-        android:text="@string/Job_Title"
+        android:text="Job Title"
         />
     
     <TextView
@@ -20,7 +20,7 @@
         android:id="@+id/CurrentStep"
         android:textSize="50px"
 
-        android:text="@string/Current_Step"
+        android:text="Current Step"
         android:layout_below="@+id/JobTitle"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
