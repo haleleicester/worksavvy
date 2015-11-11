@@ -53,6 +53,10 @@
             android:name=".model.DataEntryActivity"
             android:label="@string/title_activity_data_entry" >
         </activity>
+        <activity
+            android:name=".JobActivity"
+            android:label="@string/title_activity_job" >
+        </activity>
     </application>
 
 </manifest>
