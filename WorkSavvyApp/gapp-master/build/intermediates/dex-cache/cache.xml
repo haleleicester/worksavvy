@@ -2,46 +2,46 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\p14133969\git\worksavvy\WorkSavvyApp\gapp-master\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
-        <dex dex="C:\Users\p14133969\git\worksavvy\WorkSavvyApp\gapp-master\app\build\intermediates\pre-dexed\debug\classes-a8f187aa20657df88907c9421a7637dcf7ee66b2.jar" />
-    </item>
-    <item
-        jar="C:\Users\p14133969\git\worksavvy\WorkSavvyApp\gapp-master\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="3f151e49c316a5ab2c065969a3b3b55ef9b393fc">
-        <dex dex="C:\Users\p14133969\git\worksavvy\WorkSavvyApp\gapp-master\app\build\intermediates\pre-dexed\debug\classes-ab7c3d4c1d7227217566d0426c094690f054aa0f.jar" />
-    </item>
-    <item
-        jar="C:\Users\p14133969\git\worksavvy\WorkSavvyApp\gapp-master\app\build\intermediates\exploded-aar\com.android.support\design\23.1.0\jars\classes.jar"
+        jar="H:\WorkSavvy\worksavvy\WorkSavvyApp\gapp-master\app\build\intermediates\exploded-aar\com.android.support\design\23.1.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="19026d31f5d3ae868db81319671a642be5fbba08">
-        <dex dex="C:\Users\p14133969\git\worksavvy\WorkSavvyApp\gapp-master\app\build\intermediates\pre-dexed\debug\classes-ce9402d240f8a5c954c7dd5b0fc90de758461074.jar" />
+        <dex dex="H:\WorkSavvy\worksavvy\WorkSavvyApp\gapp-master\app\build\intermediates\pre-dexed\debug\classes-2a7ea7a11de2fe5977bab423963cd0bf4de5ef21.jar" />
     </item>
     <item
         jar="C:\Program Files\SA\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.0\support-annotations-23.1.0.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="92e3fc113ec3ee36b64603a38857b95700025633">
-        <dex dex="C:\Users\p14133969\git\worksavvy\WorkSavvyApp\gapp-master\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.0-296e34d81b60b34be082cfad37576669ccd97a0d.jar" />
+        <dex dex="H:\WorkSavvy\worksavvy\WorkSavvyApp\gapp-master\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.0-296e34d81b60b34be082cfad37576669ccd97a0d.jar" />
     </item>
     <item
-        jar="C:\Users\p14133969\git\worksavvy\WorkSavvyApp\gapp-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\libs\internal_impl-23.1.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
-        <dex dex="C:\Users\p14133969\git\worksavvy\WorkSavvyApp\gapp-master\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.0-dadd0bea9a2dc38d973aff61bd1b702f989dfae0.jar" />
-    </item>
-    <item
-        jar="C:\Users\p14133969\git\worksavvy\WorkSavvyApp\gapp-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\classes.jar"
+        jar="H:\WorkSavvy\worksavvy\WorkSavvyApp\gapp-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
-        <dex dex="C:\Users\p14133969\git\worksavvy\WorkSavvyApp\gapp-master\app\build\intermediates\pre-dexed\debug\classes-6498e567eb024c1c7e70972cfce787175cae6d23.jar" />
+        <dex dex="H:\WorkSavvy\worksavvy\WorkSavvyApp\gapp-master\app\build\intermediates\pre-dexed\debug\classes-1b5945b4d97f2d2b3eb3f67ec68769dd72ca0ca5.jar" />
+    </item>
+    <item
+        jar="H:\WorkSavvy\worksavvy\WorkSavvyApp\gapp-master\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
+        <dex dex="H:\WorkSavvy\worksavvy\WorkSavvyApp\gapp-master\app\build\intermediates\pre-dexed\debug\classes-fb3d38ac09752d6cc8fce353b7d5dbea57952c31.jar" />
+    </item>
+    <item
+        jar="H:\WorkSavvy\worksavvy\WorkSavvyApp\gapp-master\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3f151e49c316a5ab2c065969a3b3b55ef9b393fc">
+        <dex dex="H:\WorkSavvy\worksavvy\WorkSavvyApp\gapp-master\app\build\intermediates\pre-dexed\debug\classes-e47d3950fc9db5848e3cdfb4a5d06757ab36d82b.jar" />
+    </item>
+    <item
+        jar="H:\WorkSavvy\worksavvy\WorkSavvyApp\gapp-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\libs\internal_impl-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
+        <dex dex="H:\WorkSavvy\worksavvy\WorkSavvyApp\gapp-master\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.0-efcae60b3338562281bc1485471a5b7d9443466d.jar" />
     </item>
 
 </items>

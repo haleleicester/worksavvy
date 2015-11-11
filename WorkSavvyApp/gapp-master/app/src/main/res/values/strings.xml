@@ -35,7 +35,9 @@
 
 
     <!-- Job Activity Strings -->
-
     <string name="Job_Title">Job Title</string>
+    <string name="Current_Step">Current Step</string>
+    <string name="title_activity_preparation_activty">Preparation Activty</string>
+    <string name="title_activity_preparation_phase2">PreparationPhase2</string>
 
 </resources>

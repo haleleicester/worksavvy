@@ -1,19 +1,46 @@
 package com.example.gapp;
 
+import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Chronometer;
 
 public class JobActivity extends AppCompatActivity {
+    Chronometer chron;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_job);
+        chron = (Chronometer) findViewById(R.id.Chronometer);
+        chron.stop();
     }
 
+    public void hide(View view) {
+        setContentView(R.layout.activity_job);
+        chron = (Chronometer) findViewById(R.id.Chronometer);
+        chron.setVisibility(view.INVISIBLE);
+    }
 
+    public void prevButtonPress() {
+
+    }
+
+    public void nextButtonPress() {
+
+    }
+
+    public void PlayPause(View view) {
+        chron = (Chronometer) findViewById(R.id.Chronometer);
+        chron.start();
+    }
+    public void Pause(View view) {
+        chron = (Chronometer) findViewById(R.id.Chronometer);
+        chron.stop();
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -33,7 +60,6 @@ public class JobActivity extends AppCompatActivity {
         if (id == R.id.action_settings) {
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 }

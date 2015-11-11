@@ -57,6 +57,14 @@
             android:name=".JobActivity"
             android:label="@string/title_activity_job" >
         </activity>
+        <activity
+            android:name=".PreparationActivty"
+            android:label="@string/title_activity_preparation_activty" >
+        </activity>
+        <activity
+            android:name=".PreparationPhase2"
+            android:label="@string/title_activity_preparation_phase2" >
+        </activity>
     </application>
 
 </manifest>

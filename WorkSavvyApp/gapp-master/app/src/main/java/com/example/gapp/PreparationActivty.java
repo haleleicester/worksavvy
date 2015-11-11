@@ -1,35 +1,22 @@
 package com.example.gapp;
 
-import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Chronometer;
 
-import com.example.gapp.model.DataEntryActivity;
-
-public class MainActivity extends AppCompatActivity {
+public class PreparationActivty extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_preparation_activty);
     }
 
-    public void onUserAccess(View view){
-        Intent myIntent = new Intent(view.getContext(), PreparationActivty.class);
-        startActivityForResult(myIntent, 0);
-    }
-    public void onDataEntry(View view){
-        Intent myIntent = new Intent(view.getContext(), DataEntryActivity.class);
-        startActivityForResult(myIntent, 0);
-    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_preparation_activty, menu);
         return true;
     }
 
@@ -46,10 +33,5 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    public void onTestPress(View view){
-        Intent myIntent = new Intent(view.getContext(), JobActivity.class);
-        startActivityForResult(myIntent, 0);
     }
 }
