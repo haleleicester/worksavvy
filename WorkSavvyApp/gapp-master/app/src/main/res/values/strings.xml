@@ -25,11 +25,17 @@
     <string name="title_activity_data_entry">DataEntryActivity</string>
 
     <string name="hello_world">Hello world!</string>
-    <string name="activityName">Activity Name...</string>
+    <string name="activityName"></string>
     <string name="taskNumber">Task no.</string>
     <string name="taskDescription">Description</string>
     <string name="timeLimit">Time Limit</string>
     <string name="taskCheck">Completed</string>
     <string name="title_activity_job">JobActivity</string>
+
+
+
+    <!-- Job Activity Strings -->
+
+    <string name="Job_Title">Job Title</string>
 
 </resources>

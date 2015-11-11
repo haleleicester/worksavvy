@@ -6,54 +6,97 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.example.gapp.model.DataEntryActivity">
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/activityName"
-        android:layout_centerHorizontal="true"
-        android:text="@string/activityName"/>
-
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/activityName"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:id="@+id/activityTable">
+        android:id="@+id/activityTable"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1.0">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/taskNumber"
+                android:text="Title"
+                android:id="@+id/textView5"
+                android:layout_weight="0.4"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/activityName"
+                android:text="@string/activityName"
+                android:layout_weight="0.6"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1.0">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Equipment"
                 android:id="@+id/textView"
-                android:textAlignment="center" />
+                android:layout_weight="0.4"/>
 
-            <TextView
-                android:layout_width="wrap_content"
+            <EditText
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/taskDescription"
                 android:id="@+id/textView2"
-                android:textAlignment="center"/>
+                android:layout_weight="0.6"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1.0">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/timeLimit"
-                android:id="@+id/textView3"
-                android:textAlignment="center"/>
+                android:text="Health + Safety"
+                android:id="@+id/editText"
+                android:layout_weight="0.4"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText2"
+                android:layout_weight="0.6"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1.0">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/taskCheck"
-                android:id="@+id/textView4"
-                android:textAlignment="center"/>
+                android:text="Job Steps"
+                android:id="@+id/editText3"
+                android:layout_weight="0.4"/>
 
-        </TableRow>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText4"
+                android:layout_weight="0.6"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/button" />
+
     </TableLayout>
 
 </RelativeLayout>
