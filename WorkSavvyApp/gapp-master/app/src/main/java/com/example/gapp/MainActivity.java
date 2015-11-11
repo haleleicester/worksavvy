@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Chronometer;
 
 import com.example.gapp.model.DataEntryActivity;
 
@@ -18,12 +17,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void onUserAccess(View view){
-        Intent myIntent = new Intent(view.getContext(), PreparationActivty.class);
+    public void onInspirePress(View view){
+        Intent myIntent = new Intent(view.getContext(), InspireActivity.class);
         startActivityForResult(myIntent, 0);
     }
-    public void onDataEntry(View view){
-        Intent myIntent = new Intent(view.getContext(), DataEntryActivity.class);
+    public void onNewEventPress(View view){
+        Intent myIntent = new Intent(view.getContext(), CreateEvent1Activity.class);
         startActivityForResult(myIntent, 0);
     }
     @Override
@@ -49,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onTestPress(View view){
-        Intent myIntent = new Intent(view.getContext(), JobActivity.class);
+        Intent myIntent = new Intent(view.getContext(), DataEntryActivity.class);
         startActivityForResult(myIntent, 0);
     }
 }

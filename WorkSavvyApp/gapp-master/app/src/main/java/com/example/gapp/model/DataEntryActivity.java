@@ -1,13 +1,36 @@
 package com.example.gapp.model;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.example.gapp.R;
 
+import org.w3c.dom.*;
+
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
 public class DataEntryActivity extends AppCompatActivity {
+    EditText activityName;
+    EditText equipmentName;
+    EditText healthName;
+    EditText stepsName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,25 +38,61 @@ public class DataEntryActivity extends AppCompatActivity {
         setContentView(R.layout.activity_data_entry);
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_data_entry, menu);
-        return true;
+    public void onEquipmentAddPress(View view){
+        Toast.makeText(getApplicationContext(), "Add Equipment", Toast.LENGTH_LONG).show();
+    }
+    public void onEquipmentMinusPress(View view){
+        Toast.makeText(getApplicationContext(), "Remove Equipment", Toast.LENGTH_LONG).show();
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+    public void onHealthAddPress(View view){
+        Toast.makeText(getApplicationContext(), "Add Health + Safety", Toast.LENGTH_LONG).show();
+    }
+    public void onHealthMinusPress(View view){
+        Toast.makeText(getApplicationContext(), "Remove Health + Safety", Toast.LENGTH_LONG).show();
+    }
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+    public void onStepAddPress(View view){
+        Toast.makeText(getApplicationContext(), "Add Steps", Toast.LENGTH_LONG).show();
+    }
+    public void onStepMinusPress(View view){
+        Toast.makeText(getApplicationContext(), "Remove Steps", Toast.LENGTH_LONG).show();
+    }
+
+    public void onFinishPress(View view){
+        activityName = (EditText) findViewById(R.id.activityName);
+        String sActivityName = activityName.getText().toString();
+        //Toast.makeText(getApplicationContext(), sActivityName, Toast.LENGTH_LONG).show();
+
+        equipmentName = (EditText) findViewById(R.id.equipmentCreate);
+        String sEquipmentName = equipmentName.getText().toString();
+        //Toast.makeText(getApplicationContext(), sEquipmentName, Toast.LENGTH_LONG).show();
+
+        healthName = (EditText) findViewById(R.id.healthCreate);
+        String sHealthName = healthName.getText().toString();
+        //Toast.makeText(getApplicationContext(), sHealthName, Toast.LENGTH_LONG).show();
+
+        stepsName = (EditText) findViewById(R.id.stepsCreate);
+        String sStepsName = stepsName.getText().toString();
+        //Toast.makeText(getApplicationContext(), sStepsName, Toast.LENGTH_LONG).show();
+
+        try {
+
+            URL url;
+            url = new URL("http://www.jrevents.co.uk/test.php");
+            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            //Current problem lies in conn.getResponseCode()
+            if (conn.getResponseCode() == HttpURLConnection.HTTP_OK) {
+                InputStream is = conn.getInputStream();
+            } else {
+                //InputStream err = conn.getErrorStream();
+            }
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-
-        return super.onOptionsItemSelected(item);
     }
+
+
 }
